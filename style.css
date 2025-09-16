@@ -1,0 +1,138 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1565c0;
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1565c0;
+}
+.logo span {
+  color: #64b5f6;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  margin: 0 15px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #1565c0;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #64b5f6;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  min-height: 90vh;
+}
+
+.hero-text {
+  flex: 1;
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+
+.hero-text h3 {
+  font-weight: 400;
+  color: #333;
+}
+.hero-text h1 {
+  font-size: 50px;
+  margin: 10px 0;
+}
+.hero-text .name {
+  color: #1565c0;
+}
+.hero-text .role {
+  color: #64b5f6;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: #1565c0;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.social-icons a:hover {
+  color: #64b5f6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #1565c0;
+  border-radius: 25px;
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #1565c0;
+  color: #fff;
+}
+
+
+.hero-img {
+  flex: 1;
+  text-align: right;
+  animation: fadeInRight 1.2s ease-in-out;
+}
+.hero-img img {
+  width: 350px;
+  border-radius: 50%;
+  border: 8px solid #e3f2fd;
+  box-shadow: 0 10px 25px rgba(21, 101, 192, 0.3);
+}
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
